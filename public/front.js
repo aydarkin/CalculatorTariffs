@@ -39,8 +39,8 @@ function clear_question(){
 
 $('#start_btn').on('click', function (event) {
     $('.first_page').hide();
-    //$('.menu').show();
-    $('.final_page').show();
+    $('.menu').show();
+    $('.second_page').show();
 });
 
 $('#btn_2').on('click', function (event) {
