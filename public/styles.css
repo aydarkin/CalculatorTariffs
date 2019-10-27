@@ -135,6 +135,23 @@ body {
     color: #2B5493;
 }
 
+.final_name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #333333;
+}
+
+.final_block {
+    background: linear-gradient(180deg, #2B5493 34.1%, rgba(43, 84, 147, 0.63) 100%);
+    border-radius: 16px 15px 16px 16px;
+    width: 442.34px;
+    height: 539.44px;
+}
+
 .answer, .subanswer {
     font-size: 28px !important;
     font-style: normal !important;
