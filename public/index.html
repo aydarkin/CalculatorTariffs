@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Калькулятор тарифов</title>
+</head>
+<body>
+    <div class="container first_page mb-5">
+        <div class="container text-center">
+            <h1 class="title mt-4">Калькулятор тарифов</h1>
+            <p class="lead text-muted">Выберете нужную форму собственности</p>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <div id="IP" class="korobka">
+                    <p class="pt-4 pl-4 type">ИП</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div id="OOO" class="korobka"><p class="pt-4 pl-4 type">ООО</p></div>
+            </div>
+            <div class="col-xl-4">
+                <div id="drugoe" class="korobka"><p class="pt-4 pl-4 type">Другое</p></div>
+
+                <div><input type="text" class="form-control mt-4 hintbox" placeholder="Вид собственности" aria-describedby="basic-addon1"></div>
+                <div class="pt-2">
+                    <span class="hint ml-3">АО</span>
+                    <span class="hint ml-3">Самозанятый</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-12 mt-5 text-center">
+            <button id="start_btn" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu_elem">
+            <span class="dot"> </span>
+            <p class="menu_elem_text">Форма собственности</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot enabledDot"> </div>
+            <p class="menu_elem_text enabledText">Виды деятельности</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot enabledDot"></div>
+            <p class="menu_elem_text enabledText">Возраст компании</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot enabledDot"> </div>
+            <p class="menu_elem_text enabledText">Сотрудники</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot"> </div>
+            <p class="menu_elem_text">Денежный оборот</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot"> </div>
+            <p class="menu_elem_text">Платежи</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot"> </div>
+            <p class="menu_elem_text">Наличные средства</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot"> </div>
+            <p class="menu_elem_text">Валюта</p>
+        </div>
+        <div class="menu_elem">
+            <div class="dot"> </div>
+            <p class="menu_elem_text">Преимущества</p>
+        </div>
+        <div class="text-center"><button id="cancel_btn" type="button" class=" btn buttonCancel"><p class="mb-0 align-middle textNext">Завершить досрочно</p></button></div>
+    </div>
+
+    <div class="container second_page">
+        <div class="questions mt-5">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h1 class="question mt-4">Виды деятельности</h1>
+                    <p class="lead text-muted">Выберете подходящий вид деятельности вашей компании</p>
+                </div>
+                <div class="answers_block media-body">
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Торговля</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Розница</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Оптовая</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Интернет-магазин</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Строительство и ремонт</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Строительство</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Подрядные работы</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Ремонтные работы</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Перевозки</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Грузы</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Пассажиры</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Недвижимость</span>
+                        </button>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Услуги</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Консультационные</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Бухгалтерские</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Бытовые</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Гостиничное дело</span>
+                        </button>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Самозанятый</span>
+                        </button>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Адвокат, нотариус, юрист</span>
+                        </button>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Некоммерческая организация</span>
+                        </button>
+                    </div>
+                    <div class="container answer_block mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Другое</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <input type="text" class="form-control mt-4 hintbox" placeholder="Вид собственности" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_2" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+
+    <div class="container third_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">Возраст компании</h1>
+                <p class="lead text-muted">С момента регистрации</p>
+            </div>
+            <div class="answers_block media">
+                <div class="mb-5 media-body text-center">
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">До трёх месяцев</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">3-12 месяцев</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">От 1 до 3 лет</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">От 3 лет</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_3" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+
+    <div class="container fourth_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">У вас более 5 сотрудников?</h1>
+                <p class="lead text-muted">в основном штате</p>
+            </div>
+            <div class="answers_block media">
+                <div class="mb-5 media-body text-center">
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">Да</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">Нет</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_4" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+
+    </div>
+
+    <div class="container fifth_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">Примерный оборот / выручка за год</h1>
+                <p class="lead text-muted">400 млн в год = 33 млн в месяц</p>
+            </div>
+            <div class="answers_block media">
+                <div class="mb-5 media-body text-center">
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">До 400 млн в год</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">От 400 млн в год</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_5" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+
+    <div class="container sixth_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">Сколько в среднем платежей проводите в месяц?</h1>
+            </div>
+            <div class="answers_block media">
+                <div class="mb-5 mt-5 media-body text-center">
+                    <form>
+                        <div class="form-group">
+                            <label for="paymentRange">Выберете нужно значение</label>
+                            <input type="range" id="paymentRange" min="0" max="200" step="1" class="form-control-range">
+                        </div>
+                    </form>
+                    <p class="lead text-muted">(тут будет выводиться значение)</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_6" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+
+    <div class="container seventh_page">
+
+        <div class="questions mt-5">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h1 class="question mt-4">Вносите наличные на расчётный счёт?</h1>
+                    <p class="lead text-muted">Если да, то сколько?</p>
+                </div>
+                <div class="answers_block media">
+                    <div class="mb-5 media-body">
+                        <button class="answer col-12 btn btn-primary">
+                            <span>Да</span>
+                        </button>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>До 30 тысяч</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>До 300 тысяч</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>До 700 тысяч</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>До 1.5 миллионов</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>До 4 миллионов</span>
+                            </button>
+                        </div>
+                        <div class="subanswer_block media ml-5">
+                            <button class=" container subanswer btn btn-primary">
+                                <i class="material-icons mr-3">radio_button_unchecked</i><span>Больше</span>
+                            </button>
+                        </div>
+                        <button class="answer col-12 btn btn-primary" style="margin-top: 30px;">
+                            <span>Нет</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_7" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+    </div>
+
+    <div class="container eighth_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">Работаете с иностранной валютой?</h1>
+            </div>
+            <div class="answers_block media">
+                <div class="mb-5 media-body text-center">
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">Да</span>
+                    </button>
+                    <button class="single_answer col-8 btn">
+                        <span class="answer_text">Нет</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_8" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+
+    </div>
+
+    <div class="container ninth_page">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h1 class="question mt-4">Дополнительные преимущества</h1>
+            </div>
+            <div class="answers_block">
+                <div class="mb-5 text-center">
+                    <button class="offer col-12 btn">
+                        <div class="offer_name">
+                            <p>СМС-информирование по р/счёту</p>
+                        </div>
+                        <div class="offer_desc">
+                            <p class="offer_text">Если вы часто находитесь вне офиса и интернет-банк не под рукой, для быстрого получения информации по расчётному счёту рекомендуем подключить СМС-информирование.</p>
+                            <p>Получить больше информации</p>
+                        </div>
+                    </button>
+                    <button class="offer col-12 btn">
+                        <div class="offer_name">
+                            <p>Сервис проверки контрагентов Светофор</p>
+                        </div>
+                        <div class="offer_desc">
+                            <p class="offer_text">Для подтверждения благонадёжности контрагентов прямо в интернет-банк втроена их автоматическая проверка.</p>
+                            <p>Получить больше информации</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-5 text-center">
+            <button id="btn_finnish" type="button" class="btn btn-success buttonNext"><p class="mb-0 align-middle textNext">Далее</p></button>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="front.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "name": "expressapp",
+    "version": "1.0.0",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "express": "^4.16.4"
+    }
+}

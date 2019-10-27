@@ -1,0 +1,239 @@
+body {
+    font-family: Roboto;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+.question .title{
+    text-align: center;
+    color: #0E3263;
+}
+
+.dot {
+    height: 28px;
+    width: 28px;
+    margin: 4px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: central;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    background-color: #0E3263 !important;
+}
+
+.menu_elem {
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.enabledDot {
+    background-color: #219653;
+}
+
+.menu_elem_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 30px;
+    vertical-align: top;
+    font-size: 28px;
+    color: #E0E0E0;
+}
+
+.enabledText {
+    color: #219653;
+}
+
+.buttonCancel {
+    margin-top:20px;
+}
+
+.menu {
+    position: fixed;
+    right: 15px;
+    width: 380px;
+    padding: 10px;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    border: 2px solid #0E3263;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991.98px) {
+    .menu {
+        display: none;
+    }
+}
+
+.single_answer {
+    background: #FFFFFF;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.offer_name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+    background: #0E3263;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: left;
+    width: 600px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.offer_desc {
+    
+    background: #2B5493;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 20px;
+    height: 150px;
+    width: 600px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.offer_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #F2F2F2;
+    text-align: left;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.answer_text {
+    font-family: Roboto;
+    font-style: normal;
+    width: 300px;
+    font-size: 32px;
+    line-height: 37px;
+    color: #2B5493;
+}
+
+.answer, .subanswer {
+    font-size: 28px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    border: none !important;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    padding-left: 30px !important;
+}
+
+.answer:hover, .subanswer:hover {
+    background-color: #0E3263 !important;
+    color: #F2F2F2 !important;
+}
+
+.subanswer {
+    background-color: #F2F2F2 !important;
+    color: #0E3263 !important;
+    border-radius: 0px !important;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0);
+    display: none ;
+}
+
+.answer {
+    border-radius: 20px;
+    background-color: #FFFFFF !important;
+    color: #0E3263 !important;
+}
+subanswer_block{
+    display:none ;
+}
+
+
+.type {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    color: #0E3263;
+}
+.korobka {
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.hint {
+    border-bottom: 1px dotted #828282;
+    text-decoration: none;
+    color: #828282;
+    cursor: pointer;
+}
+
+.hintbox {
+    color: #828282;
+}
+
+#IP {
+    height: 442px;
+    background-image: url("assets/IP.jpg");
+    background-position: center;
+}
+
+#OOO {
+    height: 442px;
+    background-image: url("assets/OOO.jpg");
+    background-size: 125%;
+    background-repeat: no-repeat;
+}
+
+#drugoe {
+    height: 312px;
+    background-image: url("assets/drugoe.jpg");
+    background-position: center;    
+}
+
+.buttonNext {
+    background-color: #FEDB31 !important;
+    border-color: #FEDB31 !important;
+    padding: 15px 60px !important;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 45px;
+}
+
+.textNext {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+}
+
+.ellipse {
+    border-color: #219653;
+    background-color: #219653;
+    color: #219653;
+    border-radius: 50%;
+}
+  
