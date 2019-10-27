@@ -28,6 +28,7 @@ function clear_answer() {
     $('.seventh_page').hide();
     $('.eighth_page').hide();
     $('.ninth_page').hide();
+    $('.menu').hide();
 }
 
 function clear_question(){
